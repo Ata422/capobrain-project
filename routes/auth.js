@@ -72,13 +72,13 @@ router.post(
     }
     try {
       const {title,content,category} = req.body
-      const imageFilename = req.file.filename;
-      const imageUrl = `http://localhost:8000/uploads/${imageFilename}`;
+      // const imageFilename = req.file.filename;
+      // const imageUrl = `http://localhost:8000/uploads/${imageFilename}`;
     const post = await Post.create({
         title,
         content,
         category,
-        image: imageUrl,
+        // image: imageUrl,
       });
 
       res.json({post});
