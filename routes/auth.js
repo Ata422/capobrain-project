@@ -79,7 +79,9 @@ router.post(
         content,
         category,
         // image: imageUrl,
+        
       });
+
 
       res.json({post});
     } catch (error) {
